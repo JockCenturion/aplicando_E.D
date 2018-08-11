@@ -1,0 +1,182 @@
+===============================================================================================================================================================
+Q1)
+===============================================================================================================================================================
+
+Maria tem n tarefas para fazer. A execução de algumas delas é dependente de outras serem feitas antes.
+
+Entrada
+A entrada consiste de diversas instâncias do problema. Cada instância inicia com uma linha contendo dois inteiros,  1 = n = 100 and m. n é o número de 
+tarefas (numeradas de 1 a n) e m é o número de relações diretas de dependência entre duas tarefas. Depois disso, são apresentadas m linhas contendo 
+dois inteiros i e j, representando o fato que a tarefa i deve ser executada antes da tarefa j.Quando uma instância for informada com n = m = 0, deve 
+terminar a entrada.
+
+Saída
+Para cada instância, imprima uma linha com n inteiros representando as tarefas em uma ordem possível de execução que respeita todas as dependências diretas.
+
+Exemplo de Entrada
+
+3 2
+
+1 2
+
+2 3
+
+0 0
+
+Exemplo de Saída
+
+1 2 3
+===============================================================================================================================================================
+Q2)
+===============================================================================================================================================================
+
+Considere um grafo G formado por um grande número de nós conectados por arestas. G é dito conectado se um caminho pode ser ecnontrado em 0 ou mais passos 
+entre quaisquer pares de vós em G. Por exemplo, o grafo a seguir não é conectado porque não há um caminho de A para C.
+
+C     A _ B _ D
+
+|
+E
+
+Este grafo, no entanto, contém um número de subgrafos que são conectados, um para cada conjunto de nós: {A}, {B}, {C}, {D}, {E}, {A,B}, {B,D}, {C,E}, {A,B,D}.
+Um subgrafo conectado é maximal se não há nós e arestas no grafo original que poderiam ser adicionados ao subgrafo e ainda deixá-lo conectado. Há, portanto, 
+dois subgrafos maximais acima, um associado com os nós {A, B, D} e outro com os nós {C, E}.
+Escreva um programa para determinar o número de subgrafos conectados maximais de um dado grafo.
+
+Entrada
+A entrada inicia com um único inteiro positivo em uma linha isolada indicando o número de casos de teste que segue, cada um destes casos como descrito a seguir. 
+Esta linha é seguida por uma linha em branco, e há também uma linha em branco entre dois casos de teste consecutivos na entrada.A primeira linha de cada caso de 
+teste contém uma única letra maiúscula. Este caractere representa o maior nome de nó no grafo. Cada linha sucessiva contém um par de letras maiúsculas denotando 
+uma aresta no grafo. A entrada é terminada por uma linha em branco. 
+
+Saída
+Para cada caso de teste, escreva o número máximo de subgrafos conectados do grafo dado como entrada.
+
+Exemplo de entrada do enunciado
+
+1
+
+E
+
+AB
+
+CE
+
+DB
+
+EC
+
+Respectiva Saída
+
+2
+===============================================================================================================================================================
+Q3)
+===============================================================================================================================================================
+
+Você está em um labirinto de pedra 3D. Cada célula desse labirinto é um cubo vazio ou de rocha sólida. Você pode se movimentar apenas entre células vazias. Demora 
+um minuto para se mover para o norte, sul, leste, oeste, para cima ou para baixo. O labirinto possui vários níveis.Sua tarefa é informar o número mínimo de minutos 
+para se movimentar do lugar marcado como E (entrada) até o local marcado como S (saída).
+
+Entrada
+A entrada de cada caso de teste inicia com três inteiros N, L, C. N representa o número de níveis do labirinto. L e C representam o número de linhas e colunas de 
+cada nível do labirinto. Depois de informados os três inteiros, seguem L descrições de níveis de um labirinto. Cada descrição de nível contém L linhas contendo 
+C caracteres cada uma delas. Os caracteres podem ser: ‘.’, representando um espaço vazio; ‘#’, representando rocha sólida; ’S' para o cubo de saída; ‘E' para o 
+cubo de entrada. Considere que há rocha sólida ao redor de todo o labirinto de tal forma que só é possível se movimentar entre os cubos vazios ‘.’.
+
+Saída
+Se não for possível se movimentar da célula marcada como ‘E' até a célula marcada como ’S’, imprima numa linha isolada:
+Trapped!
+Por outro lado, se for possível sair do labirinto, imprima a linha seguinte, substituind x pela menor quantidade de minutos necessários para sair do labirinto:
+Escaped in x minute(s).
+
+Exemplo de entrada
+3 4 5
+
+S....
+
+.###.
+
+.##..
+
+###.#
+
+ 
+
+#####
+
+#####
+
+##.##
+
+##...
+
+ 
+
+#####
+
+#####
+
+#.###
+
+####E
+
+ 
+
+1 3 3
+
+S##
+
+#E#
+
+###
+
+ 
+
+0 0 0
+
+ 
+Saída
+Escaped in 11 minute(s).
+
+Trapped!
+===============================================================================================================================================================
+Q5)
+===============================================================================================================================================================
+Fazer um programa que tenha um registro com os campos nome, endereço, telefone, email e salário.Leia os dados de entrada e processe o tatal dos salários. Imprima
+o valor do maior salário e a quem pertence(nome).
+
+Observação: Leia o MAX registros ou até que o nome seja "fim".
+
+===============================================================================================================================================================
+Q6)
+===============================================================================================================================================================
+Considere um tipo que representa os dados de um aluno definido pela seguinte estrutura:
+
+typedef struct aluno {
+	int matricula;
+	char nome[81];
+} Aluno;
+
+Considere um vetor que armazena, em ordem crescente pelo nº de matricula, estrutura Aluno. Usando o algoritmo de busca binária faça uma função que busque um 
+aluno no vetor dado um número de matricula. A função deve receber como parâmetros o nº de alunos, o vetor e o nº da matricula a ser buscada.
+
+===============================================================================================================================================================
+Q7)
+===============================================================================================================================================================
+
+Faça um programa que receba duas String, com os caracteres em ordem crescente, retornando uma nova String alocada dinamicamente, que contenha todos os caracteres 
+das Strings originais. A string retornada tambem deve estar em order crescente com repetição de valores.
+
+Por exemplo, seja S1 = "abelk" e S2 = "acil" a string resultante será "aabceikll"
+Obs: As cadeias S1 e S2 não serão vazias.
+
+===============================================================================================================================================================
+Q8)
+===============================================================================================================================================================
+
+Faça um programa que cadastre o nome e o salário de  5 funcionários. Usando o qSort para odernar, liste todos os dados dos funcionários das seguintes formas:
+
+a) em ordem crescente de salário
+b) em ordem descrescente de salário
+c) em ordem alfabética
+

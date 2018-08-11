@@ -1,0 +1,18 @@
+					Lista de exercícios FILA
+1. Dada uma fila de inteiros, escreva um programa que exclua todos os números negativos sem alterar a posição dos outros elementos da fila.
+
+2. Faça uma função que receba três filas, duas já preenchidas em ordem crescente e preencha a última com os valores das duas primeiras em ordem crescente.
+
+3. Faça um programa que inverta o conteúdo de uma fila usando apenas as funções de acesso.
+
+4. Faça as funções insere e remove da fila. No lugar de criar uma estrutura de lista, use uma pilha e apenas as funções de acesso a pilha, sem acessar diretamente qtd, max, topo. Dica: use uma pilha auxiliar.
+
+5. Escreva um programa que tenha uma fila cujos elementos possuem um campo inteiro representando sua prioridade. Quanto menor o valor deste campo, maior a prioridade do elemento. Insira n elementos com 
+prioridades diversas na fila e depois divida a fila em duas, uma com elementos cuja prioridade é menor ou igual ao valor p fornecido pelo usuário e outra com os elementos restantes.
+
+6. Escreva um programa que simule o controle de uma pista de decolagem de aviões em um aeroporto. Neste programa, o usuário deve ser capaz de realizar as seguintes tarefas:
+	a) Listar o número de aviões aguardando na fila de decolagem;
+	b) Autorizar a decolagem do primeiro avião da fila;
+	c) Adicionar um avião à fila de espera;
+	d) Listar todos os aviões na fila de espera;
+	e) Listar as características do primeiro avião da fila.
